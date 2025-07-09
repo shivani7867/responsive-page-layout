@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+section,header,footer{
+    padding:50px;
+}
+
+header{
+    background-color: lightgray;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 10px black;
+}
+header nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration:none;
+    font-size:30px;
+    color:black;
+}
+
+.about-image {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%; 
+    max-width: 600px; 
+    height: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.hero-sec{
+    min-height: 600px;
+    background-image: url("https://capturly.com/blog/wp-content/uploads/2018/01/eCommerce-website-search-customer-experience.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 2px 10px black;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.hero-content{
+    margin: top 150px !important;
+}
+
+.hero-content h1{
+    color:black;
+    font-size:50px;
+ 
+}
+
+#hero-btn{
+    font-size: 20px;
+    padding:20px;
+    border-radius: 10px;
+    background-color: grey;
+    color:white;
+}
+
+.about-sec {
+    display: flex;
+    align-items: center;
+    background-color: rgb(218, 214, 214);
+    box-shadow: 1px 2px 10px black;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom:20px;
+}
+
+.about-content {
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+    line-height:40px;
+}
+
+.about-content h1{
+    font-size:40px;
+    padding: 20px 0;
+}
+
+.about-content p{
+    font-size: 20px;
+}
+
+.about-content button{
+    font-size: 18px;
+    padding:10px;
+    border-radius:10px;
+    background-color: grey;
+    color:white;
+}
+
+.service-container {
+    padding: 25px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom:20px;
+    box-shadow:1px 2px 10px black;
+}
+
+.service-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.service-sec {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-box {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.contact-sec{
+    text-align:center;
+    margin-bottom: 20px;
+    box-shadow:1px 2px 10px black;
+}
+
+.contact-sec form{
+    width:45%;
+    margin:0 auto;
+    background-color: rgba(180, 145, 145, 0.2);
+    padding:60px;
+    border-radius:20px;
+}
+.contact-sec h1{
+    font-size: 35px;
+}
+
+form input{
+    display:block;
+    width:100%;
+    margin:10px;
+    padding:20px;
+}
+
+form textarea{
+    margin-left: 10px;
+    width:100%;
+}
+
+footer{
+    text-align: center;
+    background-color: lightgray;
+}
+
+.projects-sec {
+    padding: 25px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom:20px;
+    box-shadow:1px 2px 10px black;
+    background-color: lightgrey;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* --- Responsive Design ---- */
+
+/* Mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 0;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 0;
+        display :block;
+        width: auto;
+        text-align: center;
+        border: none;
+    }}
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .about-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .service-box, .project {
+        width: 90%;
+    }
+
+    .contact-sec form {
+        width: 95%;
+        padding: 30px;
+    }
+
+    form textarea {
+        width: 80%;
+    }
+
+    .section-title, .service-title {
+        font-size: 28px;
+    }
+}
+
+
+/* Tablet devices (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .service-box, .project {
+        width: 45%;
+    }
+
+    .contact-sec form {
+        width: 85%;
+    }
+
+    form textarea {
+        width: 95%;
+    }
+
+    .section-title, .service-title {
+        font-size: 32px;
+    }
+}
+
+
+/* Laptops (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-image, .about-content {
+        width: 48%;
+    }
+
+    .service-box, .project {
+        width: 30%;
+    }
+
+    .contact-sec form {
+        width: 65%;
+    }
+
+    form textarea {
+        width: 85%;
+    }
+}
